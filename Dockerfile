@@ -1,8 +1,9 @@
-FROM node:6
+FROM mhart/alpine-node:latest
 MAINTAINER KAMO Yasuhiro <duck1218+github@gmail.com>
 
-RUN apt-get update \
-    && apt-get install -qq libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+RUN apk add --no-cache cairo cairo-dev cairomm-dev \
+        pango pango-dev pangomm pangomm-dev \
+        libjpeg-turbo-dev giflib-dev g++ make
 
 RUN mkdir -p /opt/node/js \
     && cd /opt/node \

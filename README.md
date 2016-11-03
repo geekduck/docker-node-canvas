@@ -6,7 +6,16 @@ Node canvas is a Cairo backed Canvas implementation for NodeJS.
 
 ## node-canvas Docker Images
 
-node-canvas docker image
+
+node-canvas docker image based on Alpine Linux.
+
+### Experimental image
+
+This image greater than the debian base.
+
+    alpine base image: 366 MB
+
+    debian base image: 281 MB
 
 ### Usage
 

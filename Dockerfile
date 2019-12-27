@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:12
 MAINTAINER KAMO Yasuhiro <duck1218+github@gmail.com>
 
 RUN apt-get update \
